@@ -65,7 +65,7 @@ const Login = ({ setToken }) => {
                 </form>
                 <p className="mt-4 text-center text-gray-600">
                     Don't have an account?{' '}
-                    <Link to="signup" className="text-blue-500 hover:underline">Sign up</Link>
+                    <Link to="/signup" className="text-blue-500 hover:underline">Sign up</Link>
                 </p>
             </div>
         </div>
