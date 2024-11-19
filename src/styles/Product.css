@@ -1,0 +1,232 @@
+.product {
+  margin: 60px;
+}
+
+.t-name {
+  color: #27ae60;
+}
+
+  .p-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+  }
+  
+  .p-card {
+    background-color: #fff; /* Background color of the card */
+    border: 1px solid #e0e0e0; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding inside the card */
+    text-align: center; /* Center align text */
+    min-height: 350px; /* Set a minimum height for the card */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Space between items */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+  }
+  
+  .p-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  }
+  
+  .p-image {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 8px; /* Space between image and text */
+  }
+  
+
+/* Product name */
+.p-name {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+
+/* Pricing */
+.p-pricing {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.p-price {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.p-original-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.p-discount {
+  color: #e74c3c;
+  font-size: 0.9rem;
+}
+
+/* Add to Cart button */
+.add-to-cart-btn1 {
+  background-color: rgb(1, 95, 1);
+  color: whitesmoke;
+  font-weight: 900 !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.product-carousel {
+  margin: 20px auto;
+  padding: 0 40px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.p-image {
+  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.p-name {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+.p-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.add-to-cart-btn1 {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.slick-prev,
+.slick-next {
+  z-index: 10;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #007bff;
+  font-size: 45px;
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+}
+
+.arrow {
+  background-color: rgb(255, 255, 255, 0.5);
+  color: black;
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.next-arrow {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+}
+
+.prev-arrow {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+}
+
+.arrow:hover {
+  background: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.pagination a {
+  margin: 0 5px;
+  padding: 10px 18px;
+  border: 1px solid #2ecc71;
+  /* Soothing green */
+  color: #2ecc71;
+  /* Text matches the border */
+  background-color: #f0fdf4;
+  /* Light greenish background */
+  text-decoration: none;
+  border-radius: 10px;
+  /* Rounded corners for modern look */
+  transition: all 0.3s ease;
+  /* Smooth hover transition */
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+.pagination a:hover {
+  background-color: #2ecc71;
+  color: white;
+  box-shadow: 0 6px 12px rgba(46, 204, 113, 0.2);
+  /* More prominent shadow */
+  transform: translateY(-3px);
+  /* Lifts the button for interaction */
+}
+
+.pagination .active a {
+  background-color: #27ae60;
+  /* Darker green for active */
+  color: white;
+  border-color: #27ae60;
+  pointer-events: none;
+  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+  /* Stronger shadow for active */
+}
+
+.pagination .break-me {
+  color: #95a5a6;
+  /* Light gray for breaks */
+  pointer-events: none;
+  padding: 10px 15px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
