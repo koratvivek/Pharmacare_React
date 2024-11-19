@@ -65,7 +65,7 @@ const Login = ({ setToken }) => {
                 </form>
                 <p className="mt-4 text-center text-gray-600">
                     Don't have an account?{' '}
-                    <a href="/signup" className="text-blue-500 hover:underline">Sign up</a>
+                    <a href="https://pharmacare-react.onrender.com/signup" className="text-blue-500 hover:underline">Sign up</a>
                 </p>
             </div>
         </div>
