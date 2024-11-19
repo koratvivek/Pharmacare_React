@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { login } from '../api';
 
 const Login = ({ setToken }) => {
@@ -65,7 +65,7 @@ const Login = ({ setToken }) => {
                 </form>
                 <p className="mt-4 text-center text-gray-600">
                     Don't have an account?{' '}
-                    <a href="https://pharmacare-react.onrender.com/signup" className="text-blue-500 hover:underline">Sign up</a>
+                    <Link to="signup" className="text-blue-500 hover:underline">Sign up</Link>
                 </p>
             </div>
         </div>
